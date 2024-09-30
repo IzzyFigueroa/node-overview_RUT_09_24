@@ -1,10 +1,31 @@
-const num1 = parseInt(process.argv[2]);
-const num2 = parseInt(process.argv[3]);
+const mathTools = {
+    num1: 15,
+    num2: 10,
+    sum: function() {
+         return this.num1 + this.num2;
+            
+    },
+    difference: function() {
+        return this.num1 - this.num2;
+    }
 
-function sum(a, b) {
-    console.log(a + b);
+}; 
+const result = mathTools.sum()
+console.log(result)
+
+const resultDif = mathTools.difference()
+console.log(resultDif)
+
+
+function printName(userName) {
+    const capitalize = str => str[0].toUpperCase() + str.slice(1);
+    
+    const capName = capitalize(userName);
+    console.log(capName)
+
 }
+// testOne();
 
-sum(num1, num2);
 
 
+// printName('sarah');
