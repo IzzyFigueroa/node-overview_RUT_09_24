@@ -1,7 +1,7 @@
 const mathTools = {
     num1: 15,
     num2: 10,
-    sum: function() {
+    sum: function() { //shot hand would be to remove function and : example would be sym() {}
          return this.num1 + this.num2;
             
     },
@@ -15,6 +15,10 @@ console.log(result)
 
 const resultDif = mathTools.difference()
 console.log(resultDif)
+
+
+
+
 
 
 function printName(userName) {
